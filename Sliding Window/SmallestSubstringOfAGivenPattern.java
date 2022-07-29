@@ -19,10 +19,8 @@ public class SmallestSubstringOfAGivenPattern {
         int subStr = 0;
 
         for(Character ch : pattern.toCharArray())
-        {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
-        }
-
+        
         while(windowEnd < str.length()) {
             char rightChar = str.charAt(windowEnd++);
             if(map.containsKey(rightChar)) {
