@@ -46,3 +46,14 @@ public class SmallestSubstringOfAGivenPattern {
         return minLength > str.length() ? "" : str.substring(subStr, subStr + minLength);
     }
 }
+
+/*Time Complexity#
+The time complexity of the above algorithm will be O(N + M)
+where ‘N’ and ‘M’ are the number of characters in the input string and the pattern respectively.
+
+Space Complexity#
+The space complexity of the algorithm is O(M)
+since in the worst case, the whole pattern can have distinct characters which will go into the HashMap. 
+In the worst case, we also need O(N) space for the resulting substring, 
+which will happen when the input string is a permutation of the pattern.
+*/
