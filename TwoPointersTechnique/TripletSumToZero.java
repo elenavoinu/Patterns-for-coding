@@ -61,7 +61,5 @@ Sorting takes O(nlogn)
 Searching for pairs takes O(n).
 As we are searching for every number in the input array, this means that overall searchTriplets() will take O(N * logN + N^2)
 which is asymptotically equivalent to O(N^2)
-
 Space: O(n)
-
 */
