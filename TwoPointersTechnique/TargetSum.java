@@ -5,6 +5,7 @@ public class TargetSum {
         int[] arr = new int[] {1, 2, 3, 4, 6};
         System.out.println(Arrays.toString(targetSum(arr, 6)));
     }
+    
     public static int[] targetSum(int[] arr, int target) {
         int leftPointer = 0;
         int rightPointer = arr.length-1;
